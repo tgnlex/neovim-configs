@@ -1,7 +1,14 @@
-require('arch.lib.map')
-local builtin = require('telescope.builtin')
+return {
+  "nvim-telescope/telescope.nvim",
+  dependencies = { "nvim-lua/plenary.nvim" },
+  config = function()
+    require("telescope").setup()
+    local set = vim.keymap.set
 
-map('n', '<leader>ff', builtin.find_files)
-map('n', '<leader>fg', builtin.live_grep)
-map('n', '<leader>fb', builtin.buffers)
-map('n', '<leader>fh', builtin.help_tags)
+    set("n", "<leader>ff", "<cmd>Telescope find_files<cr>")
+    set("n", "<leader>fg", "<cmd>Telescope live_grep<cr>")
+    set("n", "<leader>fb", "<cmd>Telescope buffers<cr>")
+    set("n", "<leader>fs", "<cmd>Telescope git_status<cr>")
+    set("n", "<leader>fc", "<cmd>Telescope git commits<cr>")
+  end,
+}

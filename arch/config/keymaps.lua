@@ -1,8 +1,5 @@
 require('arch.lib.map')
 local set = vim.keymap.set
-
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
 -- ############### --
 -- # NORMAL MODE # --
 -- ############### --
