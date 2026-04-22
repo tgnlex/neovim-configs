@@ -1,5 +1,5 @@
 
 
-function greet(name) 
-  print("[INFO] Hello " .. name .. " your config loaded successfully!")
+function greet(name, os) 
+  print("[INFO] Hello " .. name .. " " .. "{" .. os .."}" .. " your config loaded successfully!")
 end

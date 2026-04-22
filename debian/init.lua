@@ -2,4 +2,5 @@ require("debian.config")
 require("debian.modules")
 require("debian.plugins")
 
-greet("Alex {Debian}")
+theme("habamax")
+greet("Alex", "Debian")

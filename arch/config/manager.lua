@@ -8,6 +8,7 @@ return require('packer').startup(function(use)
   use { deps.plenary }
   use { deps.icons }
   use { deps.nui }
+  use { deps.cmp }
   -- TREESITTER --
   use { 'nvim-treesitter/nvim-treesitter' }
   -- SNIPPETS --
@@ -16,6 +17,8 @@ return require('packer').startup(function(use)
   use { 'w0rp/ale' }
   -- FUZZY FINDER --
   use { 'nvim-telescope/telescope.nvim'}
+  -- AUTOPAIRS --
+  use { 'windwp/nvim-autopairs', event = {"InsertEnter"}, dependencies = {deps.cmp} }
   -- UI --
   use { 'akinsho/bufferline.nvim' }
   -- MARKDOWN --
