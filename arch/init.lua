@@ -5,4 +5,3 @@ require("arch.auto")
 
 theme("habamax")
 greet("Alex", "Arch")
-linter()

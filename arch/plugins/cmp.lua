@@ -13,11 +13,9 @@ return {
       build = "make install_jsregexp",
     },
     "rafamadriz/friendly-snippets",
-    "onsails/lspkind.nvim"
   },
   config = function()
     local cmp = require('cmp')
-    local lspkind = require('lspkind')
     local luasnip = require('luasnip')
     require("luasnip.loaders.from_vscode").lazy_load()
 
