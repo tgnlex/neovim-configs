@@ -4,7 +4,7 @@ return {
   build = ":TSUpdate",
   depenendencies = { "windwp/nvim-ts-autotag" },
   config = function()
-    local treesitter = require("nvim-treesitter.configs")
+    local treesitter = require("nvim-treesitter")
     treesitter.setup({
       highlight = { enable = true, additional_vim_regex_highlighting = false },
       indent = { enable = true },
