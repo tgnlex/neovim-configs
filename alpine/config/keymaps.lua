@@ -1,5 +1,4 @@
-require('arch.lib.map')
-local set = vim.keymap.set
+local map = vim.keymap.set
 -- ############### --
 -- # NORMAL MODE # --
 -- ############### --
@@ -10,8 +9,8 @@ map("n", "<leader>f", vim.cmd.Ex, { desc="open filesystem"})
 
 map("n", "<leader>w", "<CMD>update<CR>", {desc="write to file"})
 -- NEOTREE --
-set("n", "<leader>e", "<CMD>Neotree toggle<CR>", {desc="open neotree"})
-set("n", "<leader>r", "<CMD>Neotree focus<CR>", {desc="close neotree"})
+map("n", "<leader>e", "<CMD>Neotree toggle<CR>", {desc="open neotree"})
+map("n", "<leader>r", "<CMD>Neotree focus<CR>", {desc="close neotree"})
 -- SEARCH --
 map("n", "<leader>c", ":nohlsearch<CR>", { desc = "Clear search highlights"})
 
