@@ -1,4 +1,4 @@
-require('arch.lib.map')
+require('shared.lib.map')
 local set = vim.keymap.set
 -- ############### --
 -- # NORMAL MODE # --

@@ -1,5 +1,5 @@
+require("shared.modules")
 require("arch.config")
-require("arch.modules")
 require("arch.auto")
 
 
