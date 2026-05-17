@@ -1,7 +1,7 @@
 require("shared.modules")
-require("arch.config")
-require("arch.auto")
+require("void.config")
+require("void.auto")
 
 
 theme("habamax")
-greet("Alex", "Arch")
+greet("Alex", "Void")
